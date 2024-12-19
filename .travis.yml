@@ -1,0 +1,19 @@
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - cmake
+    - time
+    - valgrind
+    - libxml2-utils
+    - libpolyclipping-dev
+    - libc6-dev
+    - gcc
+    - g++
+
+language: cpp
+
+compiler: clang
+
+script: cmake . -DFORCELE=ON && make && ./tests/resources/check_correctness.sh  -r -s && ./tests/resources/check_correctness.sh -r -s -e tests/resources/emf-corrupted/ -xN

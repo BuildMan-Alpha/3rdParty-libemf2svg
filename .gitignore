@@ -1,0 +1,44 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Vim
+*.swp
+
+# Compiled Dynamic libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# cMake files
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+# compiled exe
+emf2svg-conv
+
+# out directory
+out
+
+# external build directory
+external-build
+
+# exceptions
+!tests/resources/filesmasher-master/Makefile
